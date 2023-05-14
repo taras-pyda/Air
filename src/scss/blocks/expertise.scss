@@ -1,0 +1,44 @@
+.expertise {
+  border-radius: 30px;
+  padding: 128px 0 134px;
+  background-color: $c_white;
+
+  @include small() {
+    padding: 128px 0;
+  };
+
+  @include x-small() {
+    padding: 72px 0;
+  };
+
+  &__title {
+    margin-bottom: 64px;
+    @extend %large-title;
+    text-align: center;
+    color: $c_dark-blue;
+
+    @include x-small() {
+      margin-bottom: 56px;
+    };
+  }
+
+  &__cards {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+
+    @include large() {
+      column-gap: 70px;
+    };
+
+    @include small() {
+      grid-auto-flow: row;
+      justify-content: center;
+      row-gap: 72px;
+    };
+
+    @include x-small() {
+      row-gap: 56px;
+    };
+  }
+}

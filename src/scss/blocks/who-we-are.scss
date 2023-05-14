@@ -1,0 +1,23 @@
+.who-we-are {
+  padding: 148px 0;
+  text-align: center;
+
+  @include small() {
+    padding: 120px 0;
+  };
+
+  &__title {
+    margin-bottom: 16px;
+    @extend %medium-title;
+    color: $c_dark-blue;
+
+    @include x-small() {
+      margin-bottom: 24px;
+    };
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 754px;
+  }
+}

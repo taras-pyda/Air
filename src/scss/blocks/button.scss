@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  @extend %button-text;
+  color: $c_white;
+  background-color: $c_blue;
+  width: 100%;
+  max-width: 264px;
+  height: 56px;
+  border-radius: 8px;
+
+  @include x-small() {
+    max-width: 100%;
+  };
+
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: $c_black;
+    border: 4px solid $c_blue;
+    border-radius: 8px;
+    transition-duration: $amin-time;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--white {
+    transition-duration: $amin-time;
+
+    &::after {
+      background-color: $c_white;
+    }
+
+    &:hover {
+      color: $c_blue;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+}

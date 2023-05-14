@@ -1,0 +1,77 @@
+.s-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: $c_white;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+
+  &:nth-child(2n) {
+    transform: translateY(-50%);
+
+    @include x-small() {
+      transform: translateY(0);
+    };
+  }
+
+  &__number {
+    margin-bottom: 24px;
+    width: max-content;
+    padding: 2px 10px;
+    background-color: $c_very-light-grey;
+    border-radius: 23px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: $c_blue;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 14px 0 56px;
+    @extend %button-text;
+    color: $c_dark-blue;
+    transition-duration: $amin-time;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      margin-right: 16px;
+      height: 100%;
+      width: 40px;
+      border-radius: 20px;
+      background-color: $c_blue;
+      background-image: url("@img/icons/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: 8px center;
+      transition-duration: $amin-time;
+    }
+
+    &:hover {
+      color: $c_white;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__button-text {
+    position: relative;
+    z-index: 1;
+  }
+}

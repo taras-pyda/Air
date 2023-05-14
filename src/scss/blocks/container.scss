@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  padding: 0 55px;
+  width: 100%;
+  max-width: 1254px;
+
+  @include medium() {
+    padding: 0 41px;
+  };
+
+  @include x-small() {
+    padding: 0 20px;
+  };
+}

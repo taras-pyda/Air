@@ -1,0 +1,46 @@
+.form {
+  &__inputs {
+    display: grid;
+    row-gap: 48px;
+    margin-bottom: 80px;
+
+    @include x-small() {
+      row-gap: 40px;
+    };
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    padding-bottom: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $c_white;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: $c_white;
+    transition-duration: $amin-time;
+
+    &::placeholder {
+      color: $c_white;
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border-color: $c_blue;
+    }
+
+    &--error {
+      border-color: $c_red;
+
+      &::placeholder {
+        color: $c_red;
+      }
+
+      &:focus {
+        border-color: $c_red;
+      }
+    }
+  }
+}

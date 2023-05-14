@@ -1,0 +1,80 @@
+.t-card {
+  display: grid;
+  justify-items: center;
+  max-width: 485px;
+  padding: 82px 56px 32px;
+  background-color: $c_white;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+
+  @include medium() {
+    padding: 82px 48px 32px;
+  };
+
+  @include x-small() {
+    padding: 82px 42px 32px;
+  };
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 82px;
+
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40%;
+      height: 100%;
+      border-radius: 12px;
+      background-color: $c_blue;
+      transform: rotate(30deg);
+    }
+
+    &::before {
+      top: -32%;
+      left: -5%;
+    }
+
+    &::after {
+      top: 32%;
+      right: -5%;
+    }
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    @include circle(140px);
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    text-align: center;
+    max-width: 362px;
+
+    &::before {
+      content: '';
+      margin-bottom: 8px;
+      display: block;
+      height: 24px;
+      background-image: url("@/img/icons/quotes.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    color: $c_dark-blue;
+  }
+
+  &__company {
+    @extend %uppercase-text;
+    color: $c_light-grey;
+  }
+}

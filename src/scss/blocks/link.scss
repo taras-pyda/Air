@@ -1,0 +1,30 @@
+.link {
+  display: block;
+  position: relative;
+  @extend %uppercase-text;
+  color: $c_white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 49%;
+    display: block;
+    height: 2px;
+    width: 0%;
+    border-radius: 4px;
+    background-color: $c_blue;
+    transition-duration: 150ms, 300ms;
+    transition-property: width, transform;
+    
+  }
+
+  &:hover {
+    &::after {
+      transition-duration: 300ms, 150ms;
+      transition-property: width, transform;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  }
+}

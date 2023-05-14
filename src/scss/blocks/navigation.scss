@@ -1,0 +1,29 @@
+.navigation {
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 48px;
+
+    @include medium() {
+      grid-auto-flow: row;
+      row-gap: 24px;
+    };
+
+    &--footer{
+      column-gap: 64px;
+
+      @include medium() {
+        grid-auto-flow: column;
+      }
+
+      @include small() {
+        column-gap: 20px;
+      };
+
+      @include x-small() {
+        grid-auto-flow: row;
+        row-gap: 24px;
+      };
+    }
+  }
+}

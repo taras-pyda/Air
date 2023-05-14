@@ -1,0 +1,43 @@
+.testimonials {
+  margin-bottom: 148px;
+
+  @include x-small() {
+    margin-bottom: 120px;
+  };
+
+  &__title {
+    margin-bottom: 16px;
+    @extend %uppercase-text;
+    color: $c_light-grey;
+  }
+
+  &__subtitle {
+    margin-bottom: 85px;
+    @extend %medium-title;
+    color: $c_dark-blue;
+
+    @include medium() {
+      margin-bottom: 56px;
+    };
+
+    @include x-small() {
+      margin-bottom: 48px;
+    };
+  }
+
+  &__cards {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
+
+    @include medium() {
+      grid-auto-flow: row;
+      justify-content: center;
+      row-gap: 30px;
+    };
+
+    @include x-small() {
+      row-gap: 24px;
+    };
+  }
+}

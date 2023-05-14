@@ -1,0 +1,34 @@
+.vis-pas-res {
+  padding: 199px 0;
+  background-color: $c_white;
+  background-image: url("@img/Shapes.png");
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: center;
+
+  @include x-small() {
+    padding: 72px 0;
+  };
+
+  &__content {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    @extend %large-title;
+    text-align: center;
+    color: $c_dark-blue;
+  }
+
+  &__text {
+    margin-bottom: 64px;
+    max-width: 754px;
+    text-align: center;
+
+    @include x-small() {
+      margin-bottom: 56px;
+    };
+  }
+}

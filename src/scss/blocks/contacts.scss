@@ -1,0 +1,54 @@
+.contacts {
+  display: grid;
+  row-gap: 48px;
+
+  &__subtitle {
+    margin-bottom: 8px;
+    @extend %uppercase-text;
+    opacity: 0.5;
+  }
+
+  &__text {
+    color: $c_white;
+  }
+
+  &__icons {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 32px;
+    width: max-content;
+  }
+
+  &__icon {
+    display: block;
+    @include square(32px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: $amin-time;
+
+    &--facebook {
+      background-image: url("@img/icons/facebook.svg");
+
+      &:hover {
+        background-image: url("@img/icons/facebook-blue.svg");
+      }
+    }
+
+    &--instagram {
+      background-image: url("@img/icons/instagram.svg");
+
+      &:hover {
+        background-image: url("@img/icons/instagram-blue.svg");
+      }
+    }
+
+    &--twitter {
+      background-image: url("@img/icons/twitter.svg");
+
+      &:hover {
+        background-image: url("@img/icons/twitter-blue.svg");
+      }
+    }
+  }
+}
