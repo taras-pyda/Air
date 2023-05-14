@@ -614,11 +614,11 @@ html {
 }
 
 .slider__button--prev {
-  background-image: url("@img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
 }
 
 .slider__button--next {
-  background-image: url("@img/icons/arrow-right.svg");
+  background-image: url("../img/icons/arrow-right.svg");
 }
 
 .slider__button:hover {
@@ -789,7 +789,7 @@ html {
   width: 40px;
   border-radius: 20px;
   background-color: #2060F6;
-  background-image: url("@img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: 8px center;
@@ -896,7 +896,7 @@ html {
   margin-bottom: 8px;
   display: block;
   height: 24px;
-  background-image: url("@/img/icons/quotes.svg");
+  background-image: url("../img/icons/quotes.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -912,7 +912,7 @@ html {
 }
 
 .no-webp .vis-pas-res {
-  background-image: url("@img/Shapes.png"); }
+  background-image: url("../img/Shapes.png"); }
 
 .vis-pas-res {
   padding: 199px 0;
@@ -1060,27 +1060,27 @@ html {
 }
 
 .contacts__icon--facebook {
-  background-image: url("@img/icons/facebook.svg");
+  background-image: url("../img/icons/facebook.svg");
 }
 
 .contacts__icon--facebook:hover {
-  background-image: url("@img/icons/facebook-blue.svg");
+  background-image: url("../img/icons/facebook-blue.svg");
 }
 
 .contacts__icon--instagram {
-  background-image: url("@img/icons/instagram.svg");
+  background-image: url("../img/icons/instagram.svg");
 }
 
 .contacts__icon--instagram:hover {
-  background-image: url("@img/icons/instagram-blue.svg");
+  background-image: url("../img/icons/instagram-blue.svg");
 }
 
 .contacts__icon--twitter {
-  background-image: url("@img/icons/twitter.svg");
+  background-image: url("../img/icons/twitter.svg");
 }
 
 .contacts__icon--twitter:hover {
-  background-image: url("@img/icons/twitter-blue.svg");
+  background-image: url("../img/icons/twitter-blue.svg");
 }
 
 .anim {
@@ -1390,4 +1390,4 @@ html {
   }
 }
 
-.webp .vis-pas-res { background-image: url(@img/Shapes.webp); }
+.webp .vis-pas-res { background-image: url(../img/Shapes.webp); }
