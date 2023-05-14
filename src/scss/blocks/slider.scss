@@ -51,11 +51,11 @@
     transition-duration: $amin-time;
 
     &--prev {
-      background-image: url('@img/icons/arrow-left.svg');
+      background-image: url('../img/icons/arrow-left.svg');
     }
 
     &--next {
-      background-image: url('@img/icons/arrow-right.svg');
+      background-image: url('../img/icons/arrow-right.svg');
     }
 
     &:hover {

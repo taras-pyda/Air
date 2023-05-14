@@ -28,26 +28,26 @@
     transition-duration: $amin-time;
 
     &--facebook {
-      background-image: url("@img/icons/facebook.svg");
+      background-image: url("../img/icons/facebook.svg");
 
       &:hover {
-        background-image: url("@img/icons/facebook-blue.svg");
+        background-image: url("../img/icons/facebook-blue.svg");
       }
     }
 
     &--instagram {
-      background-image: url("@img/icons/instagram.svg");
+      background-image: url("../img/icons/instagram.svg");
 
       &:hover {
-        background-image: url("@img/icons/instagram-blue.svg");
+        background-image: url("../img/icons/instagram-blue.svg");
       }
     }
 
     &--twitter {
-      background-image: url("@img/icons/twitter.svg");
+      background-image: url("../img/icons/twitter.svg");
 
       &:hover {
-        background-image: url("@img/icons/twitter-blue.svg");
+        background-image: url("../img/icons/twitter-blue.svg");
       }
     }
   }
